@@ -45,3 +45,28 @@ QUESTIONS["Specific Requirements"] = Question(
     "Identify any specific requirements that may influence algorithm choice, such as the need for scalability or handling of outliers."
 )
 
+QUESTIONS["K-means or Gaussian Mixture Model"] = Question(
+    "K-means or Gaussian Mixture Model",
+    "Decide between using K-means for clear, spherical clusters or Gaussian Mixture Models for more complex distributions."
+)
+
+QUESTIONS["DBSCAN, OPTICS, or Gaussian Mixture Model"] = Question(
+    "DBSCAN, OPTICS, or Gaussian Mixture Model",
+    "Choose between density-based algorithms like DBSCAN and OPTICS or Gaussian Mixture Models for varied density and shape clusters."
+)
+
+QUESTIONS["DBSCAN or OPTICS"] = Question(
+    "DBSCAN or OPTICS",
+    "Opt for DBSCAN or OPTICS when dealing with noise and the need for outlier detection."
+)
+
+QUESTIONS["DBSCAN, OPTICS, or Mean-Shift"] = Question(
+    "DBSCAN, OPTICS, or Mean-Shift",
+    "Select between DBSCAN, OPTICS, or Mean-Shift based on cluster density variance."
+)
+
+QUESTIONS["Hierarchical Clustering"] = Question(
+    "Hierarchical Clustering",
+    "Use Hierarchical Clustering to find nested clusters and understand data hierarchy."
+)
+
