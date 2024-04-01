@@ -70,3 +70,26 @@ QUESTIONS["Hierarchical Clustering"] = Question(
     "Use Hierarchical Clustering to find nested clusters and understand data hierarchy."
 )
 
+
+def getAnswers():
+    answers = [
+        Answer(QUESTIONS["Data Characteristics"], QUESTIONS["Data Type"], description="This is the start of the tree", response=""),
+
+        Answer(QUESTIONS["Data Type"], QUESTIONS["Dataset Size"], description="Proceed if your dataset consists entirely of numerical values.", response="Numeric"),
+        Answer(QUESTIONS["Data Type"], QUESTIONS["Data Transformation (If Categorical or Mixed)"], description="Proceed if your dataset includes non-numeric, categorical data or a mix of both.", response="Categorical or Mixed"),
+
+        Answer(QUESTIONS["Data Transformation (If Categorical or Mixed)"], QUESTIONS["Data Type"], description="Once the data is transformed to numeric, consider its size.", response="Transformation Done"),
+
+        Answer(QUESTIONS["Dataset Size"], QUESTIONS["Cluster Shape and Noise"], description="For small to medium datasets, assess the shape and noise level of your data.", response="Small to Medium"),
+        Answer(QUESTIONS["Dataset Size"], QUESTIONS["Specific Requirements"], description="For large datasets, consider algorithms that can handle large volumes efficiently.", response="Large"),
+
+        Answer(QUESTIONS["Cluster Shape and Noise"], QUESTIONS["K-means or Gaussian Mixture Model"], description="If clusters are circular with low noise, consider K-means or Gaussian Mixture Model.", response="Circular, Low Noise"),
+        Answer(QUESTIONS["Cluster Shape and Noise"], QUESTIONS["DBSCAN, OPTICS, or Gaussian Mixture Model"], description="For non-circular clusters or when there's low to moderate noise, consider DBSCAN, OPTICS, or Gaussian Mixture Model.", response="Non-Circular, Low-Moderate Noise"),
+        Answer(QUESTIONS["Cluster Shape and Noise"], QUESTIONS["DBSCAN or OPTICS"], description="For high noise levels and outlier detection, DBSCAN or OPTICS is suitable.", response="High Noise, Outliers"),
+
+        Answer(QUESTIONS["Specific Requirements"], QUESTIONS["DBSCAN, OPTICS, or Mean-Shift"], description="When the number of clusters is unknown, choose between DBSCAN, OPTICS, or Mean-Shift.", response="Unknown Clusters"),
+        Answer(QUESTIONS["Specific Requirements"], QUESTIONS["DBSCAN or OPTICS"], description="For outlier detection between high-density clusters, consider DBSCAN or OPTICS.", response="Outlier Detection"),
+        Answer(QUESTIONS["Specific Requirements"], QUESTIONS["Hierarchical Clustering"], description="To find relationships between items, Hierarchical Clustering is a good choice.", response="Relationships Between Items"),
+    ]
+    
+    return answers
