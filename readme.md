@@ -23,8 +23,9 @@ To run this project locally, you'll need Python installed on your machine. It's 
 
 
 ### Clone the repository
+```
 git clone https://github.com/Ghantoos7/Clustering-Algorithms-DT.git
-
+```
 ### Navigate into the project directory
 ```
 cd clustering-decision-tree-visualization
